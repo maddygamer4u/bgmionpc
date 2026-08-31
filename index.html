@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMIONPC - Ultimate BGMI Emulator Hub</title>
+    <script src="https://tailwindcss.com"></script>
+    <style>
+        .page-content { display: none; }
+        .page-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 border-b border-orange-600/30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center justify-between w-full">
+                    <!-- Logo / Brand -->
+                    <span class="text-2xl font-black tracking-wider text-orange-500 cursor-pointer" onclick="navigateTo('home')">
+                        BGMI<span class="text-white text-base font-medium">ONPC</span>
+                    </span>
+                    <!-- Desktop Navigation Links -->
+                    <div class="hidden md:flex space-x-2">
+                        <button onclick="navigateTo('home')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-white bg-orange-600">Home</button>
+                        <button onclick="navigateTo('fusion')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Fusion</button>
+                        <button onclick="navigateTo('gameloop')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Gameloop</button>
+                        <button onclick="navigateTo('mumu')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Mumu Player</button>
+                        <button onclick="navigateTo('guides')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Guides</button>
+                        <button onclick="navigateTo('optimization')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Optimization</button>
+                        <button onclick="navigateTo('vip')" class="nav-btn px-3 py-2 rounded-md text-sm font-bold text-yellow-400 hover:bg-gray-800 transition">VIP</button>
+                        <button onclick="navigateTo('contact')" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-orange-400 transition">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Dynamic Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <!-- 1. HOME PAGE -->
+        <section id="home" class="page-content active animate-fade-in">
+            <div class="text-center py-16 max-w-3xl mx-auto">
+                <span class="bg-orange-600/10 text-orange-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-orange-500/20">BGMI PC Gaming Hub</span>
+                <h1 class="text-5xl font-black tracking-tight sm:text-7xl text-white mt-4 mb-6">
+                    Play BGMI on PC with <span class="text-orange-500">Zero Lag</span>
+                </h1>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    Get premium bypasses, high frame rate configurations, and custom step-by-step controller mapping layouts designed specifically for Battlegrounds Mobile India emulators.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <button onclick="navigateTo('optimization')" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3.5 px-8 rounded-lg shadow-lg shadow-orange-600/20 transition-all">Optimize My PC</button>
+                    <button onclick="navigateTo('vip')" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 text-white font-bold py-3.5 px-8 rounded-lg transition-all">Get VIP Hacks</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FUSION PAGE -->
+        <section id="fusion" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">FUSION <span class="text-orange-500">ENGINE</span></h2>
+            <p class="text-gray-400 mb-8">Advanced input mapping and kernel-level mouse integration for BGMI emulator play.</p>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl">
+                <h3 class="text-xl font-bold text-white mb-4">Why choose Fusion Architecture?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-4 bg-gray-950 rounded-lg border border-gray-800">
+                        <h4 class="text-orange-400 font-bold mb-2">1:1 Mouse Translation</h4>
+                        <p class="text-sm text-gray-400">Eliminates standard Android emulator negative acceleration for perfect recoil control.</p>
+                    </div>
+                    <div class="p-4 bg-gray-950 rounded-lg border border-gray-800">
+                        <h4 class="text-orange-400 font-bold mb-2">Smart Smart-Key Tech</h4>
+                        <p class="text-sm text-gray-400">Dynamically switches overlay functions when driving vehicles or managing inventory.</p>
+                    </div>
+                    <div class="p-4 bg-gray-950 rounded-lg border border-gray-800">
+                        <h4 class="text-orange-400 font-bold mb-2">Resource Balancing</h4>
+                        <p class="text-sm text-gray-400">Allocates PC RAM directly to the virtualization layer for minimal frame drops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. GAMELOOP PAGE -->
+        <section id="gameloop" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">GAMELOOP <span class="text-orange-500">CENTRAL</span></h2>
+            <p class="text-gray-400 mb-8">Optimized setups exclusively tailored for Tencent's official execution engine.</p>
+            <div class="space-y-6">
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Gameloop 64-bit BGMI Smart Fix</h3>
+                        <p class="text-gray-400 text-sm mt-1">Solves the stuck-on-loading screen error and micro-stutters during Erangel hot drops.</p>
+                    </div>
+                    <button class="bg-orange-600 hover:bg-orange-700 text-xs text-white font-bold py-2.5 px-4 rounded uppercase tracking-wider whitespace-nowrap">Download Layout Patch</button>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">DirectX+ Render Profile</h3>
+                        <p class="text-gray-400 text-sm mt-1">Custom registry patch files configured explicitly for high-end NVIDIA and AMD cards.</p>
+                    </div>
+                    <button class="bg-orange-600 hover:bg-orange-700 text-xs text-white font-bold py-2.5 px-4 rounded uppercase tracking-wider whitespace-nowrap">Download Reg Tweak</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. MUMU PLAYER PAGE -->
+        <section id="mumu" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">MUMU PLAYER <span class="text-orange-500">PORTAL</span></h2>
+            <p class="text-gray-400 mb-8">The best alternative engine choice for 120 FPS high refresh rates on Android 12.</p>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl">
+                <span class="bg-green-900/30 text-green-400 text-xs font-semibold px-2.5 py-0.5 rounded border border-green-500/20">Fully Compatible</span>
+                <h3 class="text-2xl font-bold text-white mt-3 mb-2">MuMu Player 12 Setup Instructions</h3>
+                <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                    MuMu Player offers ultra-smooth rendering via Vulkan API. To bypass the "device not supported" warning, copy our system device properties file directly into your root storage folder.
+                </p>
+                <div class="bg-gray-950 p-4 rounded-lg font-mono text-xs text-orange-400 border border-gray-800">
+                    ro.product.model=ASUS_I005DA (ROG Phone 5 Profile for 120Hz unlock)
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. GUIDES PAGE -->
+        <section id="guides" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">BGMI <span class="text-orange-500">KNOWLEDGE BASE</span></h2>
+            <p class="text-gray-400 mb-8">Step-by-step masterclasses to maximize your PC advantage.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-orange-500/30 transition cursor-pointer">
+                    <h3 class="text-lg font-bold text-white mb-2">How to Enable Hardware VT (Virtualization)</h3>
+                    <p class="text-sm text-gray-400">Unlock maximum CPU cores inside bios menu configs for Intel & AMD motherboards.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-orange-500/30 transition cursor-pointer">
+                    <h3 class="text-lg font-bold text-white mb-2">GPU Drivers & VRAM Allocation</h3>
+                    <p class="text-sm text-gray-400">Install latest drivers and dedicate VRAM for lag-free gameplay at 90+ FPS.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-orange-500/30 transition cursor-pointer">
+                    <h3 class="text-lg font-bold text-white mb-2">Controller Mapping Essentials</h3>
+                    <p class="text-sm text-gray-400">Bind keys correctly for smooth aiming, sprinting, and inventory management.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-orange-500/30 transition cursor-pointer">
+                    <h3 class="text-lg font-bold text-white mb-2">Network Optimization Tips</h3>
+                    <p class="text-sm text-gray-400">Reduce ping and packet loss with proper router settings and DNS tweaks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. OPTIMIZATION PAGE -->
+        <section id="optimization" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">PC <span class="text-orange-500">OPTIMIZATION</span></h2>
+            <p class="text-gray-400 mb-8">Professional-grade system tweaks for maximum performance.</p>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl space-y-4">
+                <div class="flex items-start gap-4 p-4 bg-gray-950 rounded-lg border border-gray-800">
+                    <span class="text-2xl">⚙️</span>
+                    <div>
+                        <h3 class="text-white font-bold">RAM Optimization</h3>
+                        <p class="text-sm text-gray-400">Disable unnecessary background apps and allocate 4GB+ to your emulator.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-gray-950 rounded-lg border border-gray-800">
+                    <span class="text-2xl">🎮</span>
+                    <div>
+                        <h3 class="text-white font-bold">Graphics Settings</h3>
+                        <p class="text-sm text-gray-400">Lower shadow quality, reduce draw distance, enable dynamic resolution scaling.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-gray-950 rounded-lg border border-gray-800">
+                    <span class="text-2xl">🔧</span>
+                    <div>
+                        <h3 class="text-white font-bold">Driver Updates</h3>
+                        <p class="text-sm text-gray-400">Keep GPU drivers updated monthly for maximum stability and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. VIP PAGE -->
+        <section id="vip" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">VIP <span class="text-orange-500">MEMBERSHIP</span></h2>
+            <p class="text-gray-400 mb-8">Exclusive features and premium support for competitive players.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-gradient-to-br from-orange-900/20 to-gray-900 rounded-xl border border-orange-500/30">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">BASIC</h3>
+                    <p class="text-3xl font-black text-white mb-2">$4.99<span class="text-sm text-gray-400">/month</span></p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-300">
+                        <li>✓ Advanced controller layouts</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Monthly updates</li>
+                    </ul>
+                    <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-lg transition">Choose Plan</button>
+                </div>
+                <div class="p-6 bg-gradient-to-br from-orange-600/30 to-gray-900 rounded-xl border border-orange-500 shadow-lg shadow-orange-600/20">
+                    <span class="bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4 mt-2">PRO</h3>
+                    <p class="text-3xl font-black text-white mb-2">$9.99<span class="text-sm text-gray-400">/month</span></p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-300">
+                        <li>✓ All Basic features</li>
+                        <li>✓ Custom sensitivity profiles</li>
+                        <li>✓ Exclusive optimization patches</li>
+                        <li>✓ Discord community access</li>
+                    </ul>
+                    <button class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 rounded-lg transition">Choose Plan</button>
+                </div>
+                <div class="p-6 bg-gradient-to-br from-yellow-900/20 to-gray-900 rounded-xl border border-yellow-500/30">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">ELITE</h3>
+                    <p class="text-3xl font-black text-white mb-2">$19.99<span class="text-sm text-gray-400">/month</span></p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-300">
+                        <li>✓ All Pro features</li>
+                        <li>✓ Personal coach consultation</li>
+                        <li>✓ Custom macro configurations</li>
+                        <li>✓ Lifetime access to all updates</li>
+                    </ul>
+                    <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 rounded-lg transition">Choose Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CONTACT PAGE -->
+        <section id="contact" class="page-content">
+            <h2 class="text-3xl font-black mb-2 text-white">GET IN <span class="text-orange-500">TOUCH</span></h2>
+            <p class="text-gray-400 mb-8">Have questions? We're here to help!</p>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-white font-bold mb-2">Name</label>
+                        <input type="text" placeholder="Your name" class="w-full px-4 py-2 bg-gray-900 border border-gray-800 rounded-lg text-white focus:outline-none focus:border-orange-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-white font-bold mb-2">Email</label>
+                        <input type="email" placeholder="your@email.com" class="w-full px-4 py-2 bg-gray-900 border border-gray-800 rounded-lg text-white focus:outline-none focus:border-orange-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-white font-bold mb-2">Message</label>
+                        <textarea placeholder="Your message here..." rows="5" class="w-full px-4 py-2 bg-gray-900 border border-gray-800 rounded-lg text-white focus:outline-none focus:border-orange-600 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition">Send Message</button>
+                </form>
+                <div class="mt-8 p-6 bg-gray-900 rounded-xl border border-gray-800">
+                    <h3 class="text-white font-bold mb-4">Other Contact Methods</h3>
+                    <p class="text-gray-400 text-sm mb-2">📧 Email: support@bgmionpc.com</p>
+                    <p class="text-gray-400 text-sm mb-2">💬 Discord: Join our community server</p>
+                    <p class="text-gray-400 text-sm">📱 Instagram: @bgmionpc</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 BGMIONPC. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition text-sm">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(p => p.classList.remove('active'));
+            
+            // Show selected page
+            const selectedPage = document.getElementById(page);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
